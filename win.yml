@@ -1,0 +1,7 @@
+- name: windows module example 
+  hosts: windows
+  tasks:              
+     - name: copy file   
+       win_copy: src=/test/m.txt dest=C:\config_dir\
+     - name: copy file
+       win_copy: src=/test/q.txt dest=C:\config_dir\
